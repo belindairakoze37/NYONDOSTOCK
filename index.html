@@ -3,72 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nyondo Stock System</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/salesRegistration.css" />
   </head>
+  <style></style>
   <body>
-    <h1>Nyondo stock hardware</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-      dignissimos, repellendus recusandae nihil ratione culpa ipsam, doloremque
-      laborum numquam voluptatem neque quod voluptatibus dolorem cumque aut
-      aspernatur? Aliquam, modi et?
-    </p>
-    <ul>
-      <li>orange</li>
-      <li>mango</li>
-      <li>banana</li>
-    </ul>
-    <ol>
-      <li>pineapple</li>
-      <li>watermelom</li>
-    </ol>
-    <div>
-      <h1>Introduction to HTML</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam soluta
-        quas commodi placeat nostrum vero esse, repudiandae, fuga nisi amet
-        accusantium autem labore aliquid perferendis ipsa. Quidem ad ipsum
-        voluptates?
-      </p>
+    <div class="container">
+      <div class="sidebar">
+        <div class="grey">
+            <div class="circle"></div>
+            <div class="home">
+                <p>Your full Name</p>
+                <p>Role in the system</p>
+            </div>
+        </div>
+        <div>
+        <div>
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div>
+          <a href="SupplierRegistration.html">Supplier Management</a>
+        </div>
+        <div>
+          <a href="SalesRegistration.html">Sales Management</a>
+        </div>
+        <div>
+            <a href="stockManagement.html">Stock Management</a>
+        </div>
+        <div>
+            <a href="transportmanagement.html">Transport Management</a>
+      </div>
+      </div>
+      </div>
+      <div class="content">
+        <form action="">
+          <!-- section 1 -->
+          <section>
+            <h1>Sales Registraction</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="salesdate ">Sales Date</label>
+                <input type="date" />
+              </div>
+              <div class="input-section">
+                <label for="salesperson">Sales Person</label>
+                <select name="" id="">
+                  <option value="">Select a representative</option>
+                  <option value="1">Belinda Irakoze</option>
+                  <option value="2">Mary Namugga</option>
+                  <option value="3">Esther Nansubuga</option>
+                </select>
+              </div>
+            </div>
+          </section>
+          <!-- section 2 -->
+          <section>
+            <h2>Customer Details</h2>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="fullname">Full Name</label>
+                <input type="text" placeholder="Enter full name" />
+              </div>
+              <div class="input-section">
+                <label for="phonenumber">Phone Number</label>
+                <input type="phone number" placeholder="Enter  phone number" />
+              </div>
+            </div>
+          </section>
+          <!-- section 3 -->
+          <section>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter  email" />
+              </div>
+              <div class="input-section">
+                <label for="Customer">Customer Type </label>
+                <select name="" id="">
+                  <option value="">Select customer type</option>
+                  <option value="1">New customers</option>
+                  <option value="2">Return customers</option>
+                  <option value="3">Loyal customers</option>
+                  <option value="4">Discount Customer</option>
+                  <option value="5">Need Based Customers</option>
+                </select>
+              </div>
+            </div>
+          </section>
+          <!-- section 4 -->
+          <section>
+            <h2>Items</h2>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="pdtid">Pdt Id</label>
+                <input type="textarea" placeholder="Pdt ID" />
+              </div>
+              <div class="input-section">
+                <label for="quantity">Quantity</label>
+                <input type="number" />
+              </div>
+              <div class="input-section">
+                <label for="unitprice">Unit price</label>
+                <input type="currency" />
+              </div>
+            </div>
+          </section>
+         <!-- section 5 -->
+          <section>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="pdtid">Pdt Id</label>
+                <input type="text" placeholder="Pdt ID" />
+              </div>
+              <div class="input-section">
+                <label for="quantity">Quantity</label>
+                <input type="text" />
+              </div>
+              <div class="input-section">
+                <label for="unitprice">Unit Price</label>
+                <input type="currency" />
+              </div>
+            </div>
+          </section>
+          <br /><br /><br />
+          <!-- section 6 -->
+              <div class="final">
+                <button type="reset" class="tree">Cancel</button>
+                <button for="Submit" class="green">Submit</button>
+              </div>
+        </form>
+      
     </div>
-    <table>
-      <tr>
-        <th>first name</th>
-        <th>last name</th>
-        <th>age</th>
-      </tr>
-      <tr>
-        <td>Belinda</td>
-        <td>Irakoze</td>
-        <td>23</td>
-      </tr>
-      <tr>
-        <td>Sarah</td>
-        <td>Mirembe</td>
-        <td>22</td>
-      </tr>
-    </table>
-    <form action="">
-        <label for="firstname">First name </label>
-        <input type="text" id="firstname" placeholder="eg your firstname">
-        <br><br>
-        <label for="lastname">Last name</label>
-        <input type="text" id="lastname" placeholder="your last name">
-        <br><br>
-        <label for="age"> Age </label>
-        <input type="number" id="age">
-        <br><br>
-        <label for="date of birth "> Date Of Birth</label>
-        <input type="date" id="date of birth">
-        <br><br>
-        <label for="address">Postal Address</label>
-        <input type="address">
-        <br><br>
-        <label for="email"> Email</label>
-        <input type="email">
-        <br><br>
-        <label for="">Expected pay</label>
-        <input type="number" placeholder="ugx 500,000">
-    </form>
   </body>
 </html>
